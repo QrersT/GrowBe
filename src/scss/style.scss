@@ -1,0 +1,102 @@
+@import "base/bootstrap-reboot";
+@import "base/fonts";
+@import "base/vars";
+@import "base/icons";
+// @import "base/swiper-bundle.min";
+@import "base/slick";
+
+main {
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 45px;
+  font-family: "Gilroy-bold";
+  margin-bottom: 30px;
+}
+
+.text {
+  color: #666;
+  font-size: 16px;
+}
+
+.socials {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  .socials__link {
+    color: #aaa;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: $orange-color;
+      transition: 0.3s all;
+      color: $white-color;
+    }
+    .socials__icon {
+      margin: 0 15px;
+    }
+  }
+}
+
+.slick-track {
+  position: relative;
+}
+
+.clients {
+  .slick-dots {
+    bottom: 70px;
+  }
+}
+
+.slick-dots {
+  left: 50%;
+  transform: translate(-50%, -100%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  li {
+    margin: 0 5px;
+    button {
+      font-size: 0;
+      border: none;
+      border-radius: 50%;
+      width: 8px;
+      height: 12px;
+      background: #dddddd;
+    }
+  }
+  .slick-active {
+    button {
+      width: 15px;
+      height: 15px;
+      background: $orange-color;
+    }
+  }
+}
+
+@import "blocks/container";
+@import "blocks/btns";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/brands";
+@import "blocks/business";
+@import "blocks/features";
+@import "blocks/services";
+@import "blocks/advantages";
+@import "blocks/info";
+@import "blocks/speed";
+@import "blocks/plans";
+@import "blocks/team";
+@import "blocks/clients";
+@import "blocks/news";
+@import "blocks/footer";
+
+@import "media/media";

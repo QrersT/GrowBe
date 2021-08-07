@@ -1,0 +1,35 @@
+.btn {
+  border: none;
+  padding: 12px 30px;
+  background: $orange-color;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+  border-radius: 50px;
+  color: $white-color;
+  &_header {
+    border-radius: 30px;
+  }
+  &_services {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background: url(../img/services/arrow_right.svg);
+      width: 6px;
+      height: 10px;
+      right: 20px;
+      top: 50%;
+      transform: translate(0, -40%);
+    }
+  }
+  &_plans {
+    background: rgba(242, 88, 34, 0.25);
+    border-radius: 50px;
+    color: #f3602d;
+    font-family: "Gilroy-bold";
+  }
+
+  &_speed {
+    padding: 15px 48px;
+    margin-left: 10px;
+  }
+}

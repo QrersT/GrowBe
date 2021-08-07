@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?a9wu5v");
+  src: url("../fonts/icomoon.eot?a9wu5v#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?a9wu5v") format("truetype"),
+    url("../fonts/icomoon.woff?a9wu5v") format("woff"),
+    url("../fonts/icomoon.svg?a9wu5v#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quote-1:before {
+  content: "\e907";
+  color: #f0f0f0;
+}
+.icon-Ellipse-2-2:before {
+  content: "\e908";
+}
+.icon-Vectorgoogle:before {
+  content: "\e903";
+}
+.icon-linkedinlinkedin:before {
+  content: "\e904";
+}
+.icon-Vectortwitter:before {
+  content: "\e905";
+}
+.icon-Vectorfacebook:before {
+  content: "\e906";
+}
+.icon-Polygon-2:before {
+  content: "\e900";
+  color: #f25822;
+}
+.icon-Polygon-3:before {
+  content: "\e901";
+  color: #149211;
+}
+.icon-Rectangle-4:before {
+  content: "\e902";
+  color: #f25822;
+}

@@ -1,0 +1,26 @@
+.business {
+  background: #fafafa url(../img/business/lines.svg) center center/cover
+    no-repeat;
+}
+
+.business__wrapper {
+  display: flex;
+}
+
+.business__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.business__title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.business__text {
+  margin: 40px 0 35px;
+  font-size: 16px;
+  color: $grey-color;
+}

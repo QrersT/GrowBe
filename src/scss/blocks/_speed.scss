@@ -1,0 +1,41 @@
+.speed {
+  padding: 200px 0 140px;
+}
+
+.speed__wrapper {
+  max-width: 570px;
+  width: 100%;
+}
+
+.speed__img {
+  position: absolute;
+  z-index: -1;
+  right: -9%;
+  top: -180px;
+  width: 800px;
+  height: 550px;
+}
+
+.speed__form {
+  margin-top: 55px;
+}
+
+.speed__form {
+  input {
+    background: #eeeeee;
+    border: none;
+    outline: none;
+    height: 50px;
+    padding: 0 20px;
+  }
+
+  .speed__input_url {
+    border-right: 2px solid #ccc;
+    border-radius: 50px 0 0 50px;
+  }
+
+  .speed__input_email {
+    border-radius: 0 50px 50px 0;
+    margin-left: -4px;
+  }
+}

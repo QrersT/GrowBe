@@ -1,0 +1,22 @@
+@media (max-width: 1000px) {
+  .header {
+    padding: 35px 0;
+  }
+  .header__logo {
+    width: 110px;
+    height: 40px;
+  }
+  .header__wrapper {
+    justify-content: space-around;
+  }
+  .btn_header {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn_header {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}

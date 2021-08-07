@@ -1,0 +1,64 @@
+.clients {
+  padding: 90px 0 30px;
+  text-align: center;
+  /* position: relative; */
+  /* &::before {
+    width: 360px;
+    height: 250px;
+    content: "";
+    position: absolute;
+    background: rgba($color: #000000, $alpha: 0.5);
+    left: 0;
+    top: 50%;
+  } */
+}
+
+.clients__icon {
+  position: absolute;
+  width: 42px;
+  height: 30px;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.clients_text {
+  margin-bottom: 55px;
+}
+
+.clients__text {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+.clients__slider {
+  padding-bottom: 100px;
+}
+
+.clients__item {
+  padding: 25px 30px 30px;
+  border: 2px solid #eeeeee;
+  transition: 0.4s all;
+  margin: 0 15px 60px;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 15px 25px 60px -10px rgba(0, 0, 0, 0.1);
+
+    border: 2px solid #ffffff;
+  }
+}
+
+.clients__img {
+  margin: 0 auto 10px;
+}
+
+.clients__name {
+  font-family: "gilroy-semibold";
+  font-size: 13px;
+}
+
+.clients__speciality {
+  color: $dark-grey-color;
+  font-size: 13px;
+}
