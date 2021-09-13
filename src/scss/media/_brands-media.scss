@@ -1,5 +1,25 @@
-@media (max-width: 1200px) {
+@media (max-width: 920px) {
   .brands {
-    padding: 60px 0;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 1050px) {
+  .brands {
+    padding: 30px 0;
+  }
+  .brands__img {
+    max-width: 120px;
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 800px) {
+  .brands__img {
+    margin: 0 auto;
+  }
+  .brands__wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

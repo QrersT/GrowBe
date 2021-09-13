@@ -1,10 +1,16 @@
 .business {
   background: #fafafa url(../img/business/lines.svg) center center/cover
     no-repeat;
+  padding: 30px 0 40px;
 }
 
 .business__wrapper {
   display: flex;
+}
+
+.business__img {
+  width: 50%;
+  object-fit: contain;
 }
 
 .business__content {

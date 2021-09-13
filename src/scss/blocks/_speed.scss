@@ -11,16 +11,16 @@
   position: absolute;
   z-index: -1;
   right: -9%;
-  top: -180px;
-  width: 800px;
-  height: 550px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65%;
 }
 
 .speed__form {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 55px;
-}
 
-.speed__form {
   input {
     background: #eeeeee;
     border: none;
@@ -36,6 +36,9 @@
 
   .speed__input_email {
     border-radius: 0 50px 50px 0;
-    margin-left: -4px;
   }
+}
+
+.btn_speed {
+  margin-left: 10px;
 }

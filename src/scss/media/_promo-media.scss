@@ -1,77 +1,56 @@
-@media (max-width: 1285px) {
+@media (max-width: 1050px) {
+  .promo {
+    padding: 40px 0 100px;
+  }
+  .promo__icon {
+    display: none;
+  }
   .promo__title {
-    font-size: 50px;
+    font-size: 38px;
     &::after {
       display: none;
     }
   }
 }
 
-@media (max-width: 1200px) {
-  .title {
-    font-size: 30px;
-    font-family: "Gilroy-bold";
-    margin-bottom: 20px;
+@media (max-width: 950px) {
+  .promo {
+    padding: 50px 0 60px;
+  }
+  .promo__img {
+    width: 60%;
   }
 }
 
-@media (max-width: 1200px) {
-  .promo__img {
-    max-width: 800px;
+@media (max-width: 760px) {
+  .promo__wrapper {
+    max-width: 390px;
   }
   .promo__title {
-    font-size: 30px;
+    font-size: 38px;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 550px) {
   .promo {
-    padding: 80px 0 50px;
-    min-height: 520px;
+    padding: 10px 0 60px;
   }
   .promo__img {
-    max-width: 770px;
-  }
-  .promo__icon {
     display: none;
   }
-  .promo__wrapper {
-    max-width: 450px;
+  .promo {
+    .btn {
+      margin: 0 0 0 auto;
+    }
   }
 }
 
 @media (max-width: 1040px) {
-  .promo {
-    min-height: 460px;
-  }
-  .promo__img {
-    max-width: 680px;
-  }
 }
 
 @media (max-width: 950px) {
-  .promo {
-    padding: 40px 0 40px;
-    min-height: 390px;
-  }
-  .promo__img {
-    max-width: 600px;
-    top: -60px;
-  }
 }
 
 @media (max-width: 875px) {
-  .promo {
-    min-height: 320px;
-  }
-  .promo__img {
-    max-width: 540px;
-    height: 340px;
-  }
 }
 @media (max-width: 820px) {
-  .promo__img {
-    max-width: 490px;
-    height: 320px;
-    left: 70%;
-  }
 }

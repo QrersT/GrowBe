@@ -1,13 +1,20 @@
 .info {
   padding: 50px 0 40px;
 }
+.info__wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 .info__items {
   border: 2px solid #eeeeee;
-  height: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 1170px;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 40px 0 40px;
 }
 
 .info__item {
@@ -23,6 +30,16 @@
   &:last-child {
     &::after {
       display: none;
+    }
+  }
+  &:nth-child(3n + 2) {
+    &::after {
+      background: #149211;
+    }
+  }
+  &:nth-child(3n) {
+    &::after {
+      background: #ffc700;
     }
   }
 
@@ -41,23 +58,5 @@
   span {
     font-size: 18px;
     font-family: "gilroy-semibold";
-  }
-}
-
-.info__item2 {
-  &::after {
-    background: #149211;
-  }
-}
-
-.info__item3 {
-  &::after {
-    background: #ffc700;
-  }
-}
-
-.info__item4 {
-  ::after {
-    background: transparent;
   }
 }

@@ -1,10 +1,13 @@
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .features {
-    padding: 60px 0;
+    padding: 50px 0;
   }
-
-  .features__item-back,
-  .features__item-front {
-    padding: 30px 20px 20px 10px;
+}
+@media (max-width: 900px) {
+  .features__items {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }

@@ -1,19 +1,10 @@
-@media (max-width: 1430px) {
-  .clients {
-    padding: 60px 0 20px;
-    .slick-dots {
-      bottom: 0px;
-    }
-  }
-  .clients__slider {
-    padding-bottom: 20px;
-  }
-
+@media (max-width: 550px) {
   .clients__item {
-    padding: 20px 15px 20px;
-    margin: 10px 10px 45px;
+    padding: 10px 10px 10px;
+    margin: 0px 15px 40px;
   }
-  .slick-dots {
-    top: -220px;
+  .slick-dots .slick-active button {
+    width: 12px;
+    height: 12px;
   }
 }

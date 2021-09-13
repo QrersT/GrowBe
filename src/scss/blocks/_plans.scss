@@ -1,31 +1,38 @@
 .plans {
-  padding: 90px 0 100px;
+  padding: 80px 0 100px;
   text-align: center;
   background: #fafafa;
-  height: 880px;
+  max-height: 820px;
+  height: 100%;
 }
 
 .plans_subtitle {
   margin-bottom: 90px;
 }
+.plans_text {
+  margin-bottom: 40px;
+}
 
 .plans__items {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
 }
 
 .plans__item {
-  background: #ffffff;
+  background: #fff;
   height: 494px;
-  padding: 60px 80px 70px;
+  padding: 60px 20px 50px;
   transition: 0.4s;
-  margin-top: 40px;
+  margin: 40px 15px 0;
+  max-width: 370px;
+  width: 100%;
+  text-align: center;
 
   &:hover {
     box-shadow: 15px 25px 70px -5px rgba(0, 0, 0, 0.07);
-    padding: 90px 80px 100px;
+    padding: 90px 20px 70px;
     height: 554px;
+
     transform: translateY(-40px);
 
     .plans__item-title {
@@ -35,6 +42,7 @@
     .btn {
       background: #f25822;
       color: #ffffff;
+      transition: 0.3s all;
     }
   }
 }
@@ -64,9 +72,10 @@
 .plans__item-bonuses {
   max-width: 212px;
   width: 100%;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   div {
     line-height: 2.5;
     color: $dark-grey-color;
+    text-align: center;
   }
 }

@@ -1,17 +1,12 @@
-.icon-Polygon-2:before {
-  content: "\e900";
-  color: #f25822;
-}
-
 .promo {
-  min-height: 577px;
-  padding: 110px 0 100px;
+  padding: 100px 0 100px;
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
   max-width: 540px;
+  width: 100%;
   justify-content: center;
 }
 
@@ -77,6 +72,13 @@
   font-size: 20px;
   margin: 30px 0 40px;
 }
+.promo__btns {
+  flex-wrap: wrap;
+  a {
+    margin-left: 20px;
+    display: inline-block;
+  }
+}
 
 .promo__box {
   display: flex;
@@ -84,16 +86,11 @@
   flex-direction: column;
 }
 
-.promo__box-img {
-  margin-left: 30px;
-}
-
 .promo__img {
   position: absolute;
-  width: 100%;
-  max-width: 840px;
-  right: -370px;
-  top: -110px;
+  width: 70%;
+  top: 50%;
+  transform: translateY(-50%);
   right: -20%;
   z-index: -1;
 }

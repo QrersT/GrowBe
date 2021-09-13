@@ -10,20 +10,14 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  :first-child {
-    p {
-      max-width: 270px;
-      width: 100%;
-      font-family: "gilroy-medium";
-    }
-  }
-
-  :last-child {
-    max-width: 220px;
+  p {
+    max-width: 270px;
+    width: 100%;
   }
 }
 
 .footer__item {
+  margin: 0px 15px;
   li {
     list-style-type: none;
     font-size: 16px;
@@ -36,14 +30,18 @@ footer {
       height: 5px;
       position: absolute;
       content: "";
-      left: -10px;
+      left: 0;
       top: 50%;
       transform: translateY(-50%);
     }
     a {
       color: $dark-grey-color;
       position: relative;
+      padding-left: 15px;
     }
+  }
+  &:last-child {
+    max-width: 220px;
   }
 }
 
@@ -85,11 +83,15 @@ footer {
 
 .footer__line {
   border: 1px solid #cccccc;
-  width: 1170px;
+  width: 100%;
   margin: 50px auto 0;
 }
 
 .copyrights {
   text-align: center;
   margin-top: 30px;
+}
+
+.socials {
+  justify-content: flex-start;
 }

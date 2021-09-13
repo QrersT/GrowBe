@@ -48,12 +48,6 @@ main {
   position: relative;
 }
 
-.clients {
-  .slick-dots {
-    bottom: 70px;
-  }
-}
-
 .slick-dots {
   left: 50%;
   transform: translate(-50%, -100%);
@@ -62,6 +56,7 @@ main {
   justify-content: center;
   align-items: center;
   list-style: none;
+  bottom: -10%;
   li {
     margin: 0 5px;
     button {
@@ -79,6 +74,16 @@ main {
       height: 15px;
       background: $orange-color;
     }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.has__dropdown.active {
+  &::after {
+    transform: rotate(180deg);
   }
 }
 

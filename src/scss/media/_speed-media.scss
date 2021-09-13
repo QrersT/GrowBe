@@ -1,72 +1,45 @@
 @media (max-width: 1250px) {
-  .speed {
-    padding: 130px 0 100px;
-  }
-  .speed__img {
-    top: -57%;
-    width: 700px;
-    height: 450px;
-  }
 }
 
-@media (max-width: 1100px) {
-  .speed__img {
-    width: 600px;
-    height: 350px;
-    top: -20%;
-  }
-}
-@media (max-width: 1010px) {
-  .speed__img {
-    width: 480px;
-    height: 300px;
-    top: -10%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .speed {
-    padding: 60px 0 100px;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1045px) {
   .speed__form {
     input {
       height: 40px;
-      padding: 0px 8px;
+      padding: 0px 10px;
     }
   }
-
+  .speed__wrapper {
+    max-width: 500px;
+  }
   .btn_speed {
-    padding: 11px 35px;
-    margin-left: 7px;
+    padding: 11px 40px;
   }
 }
-@media (max-width: 850px) {
-  .speed__wrapper {
-    max-width: 400px;
+@media (max-width: 780px) {
+  .speed {
+    padding: 60px 0 60px;
   }
   .speed__img {
-    width: 440px;
-    height: 270px;
-    top: -11%;
+    width: 50%;
   }
+}
 
+@media (max-width: 650px) {
+  .speed__img {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
   .speed__form {
-    margin-top: 35px;
     input {
-      max-width: 130px;
+      width: 50%;
     }
   }
   .btn_speed {
-    padding: 10px 25px;
-    margin-left: 5px;
+    margin: 20px 0 0 auto;
   }
 }
 
 @media (max-width: 730px) {
-  .speed__img {
-    left: 60%;
-  }
 }

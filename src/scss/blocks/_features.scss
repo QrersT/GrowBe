@@ -8,15 +8,16 @@
 }
 
 .features__item {
-  max-width: 370px;
+  max-width: 350px;
   height: 290px;
-  padding: 40px 30px 65px 25px;
+  padding: 20px 20px 25px 25px;
+  margin: 15px;
   position: relative;
   width: 100%;
   perspective: 1000px;
   transition: 0.3s all;
 
-  &:hover {
+  /*  &:hover {
     box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
     .features__item-front {
       transform: rotateY(180deg);
@@ -25,11 +26,12 @@
     .features__item-back {
       transform: rotateY(360deg);
     }
-  }
+  } */
 }
 .features__item-back,
 .features__item-front {
-  padding: 40px 30px 65px 25px;
+  max-width: 350px;
+  padding: 10px 10px 15px 15px;
   border-radius: 5px;
   transition: 0.5s all;
   top: 0;
@@ -62,8 +64,16 @@
 .features__link {
   color: $black-color;
   font-weight: bold;
-
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 10px;
   &:hover {
     color: $orange-color;
   }
+}
+.accordion__text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

@@ -1,6 +1,17 @@
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
+  .title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 760px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+/* @media (max-width: 1050px) {
   .btn {
     padding: 10px 17px;
     font-size: 13px;
   }
-}
+} */
