@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/header/Screenshot_1.png" />
     <title>Grow Be</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__wrapper">
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <a href="#" class="header__logo">
             <img
               class="header__logo"
@@ -22,16 +28,18 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a href="" class="menu__list-link">Home</a>
+                  <a href="#header" class="menu__list-link">Home</a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="" class="menu__list-link">Abous Us</a>
+                  <a href="#aboutUs" class="menu__list-link">Abous Us</a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="" class="menu__list-link">Services</a>
+                  <a href="#services" class="menu__list-link">Services</a>
                 </li>
                 <li class="menu__list-item menu__list-item_js">
-                  <a class="menu__list-link has__dropdown" href="">Features</a>
+                  <a class="menu__list-link has__dropdown" href="#features"
+                    >Features</a
+                  >
                   <ul class="menu__dropdown">
                     <li class="menu__dropdown-item">
                       <a href="#">Lorem.</a>
@@ -45,7 +53,7 @@
                   </ul>
                 </li>
                 <li class="menu__list-item">
-                  <a href="" class="menu__list-link">Team</a>
+                  <a href="#team" class="menu__list-link">Team</a>
                 </li>
                 <li class="menu__list-item">
                   <a href="" class="menu__list-link">Blog</a>
@@ -103,20 +111,20 @@
       <div class="brands">
         <div class="container">
           <div class="brands__wrapper">
-            <img src="img/promo/1.png" alt="brand" />
-            <img src="img/promo/2.png" alt="brand" />
-            <img src="img/promo/3.png" alt="brand" />
-            <img src="img/promo/4.png" alt="brand" />
-            <img src="img/promo/5.png" alt="brand" />
-            <img src="img/promo/6.png" alt="brand" />
+            <img class="brands__img" src="img/promo/1.png" alt="brand" />
+            <img class="brands__img" src="img/promo/2.png" alt="brand" />
+            <img class="brands__img" src="img/promo/3.png" alt="brand" />
+            <img class="brands__img" src="img/promo/4.png" alt="brand" />
+            <img class="brands__img" src="img/promo/5.png" alt="brand" />
+            <img class="brands__img" src="img/promo/6.png" alt="brand" />
           </div>
         </div>
       </div>
-      <section class="business">
+      <section class="business" id="aboutUs">
         <div class="container">
           <div class="business__wrapper">
             <div class="business__content">
-              <h2 class="business__title">
+              <h2 class="title business__title">
                 Perfect Solution For Your Business
               </h2>
               <p class="text business__text">
@@ -127,12 +135,16 @@
               </p>
               <button class="btn">Learn More</button>
             </div>
-            <img src="img/business/macbook.png" alt="business-img" />
+            <img
+              class="business__img"
+              src="img/business/macbook.png"
+              alt="business-img"
+            />
           </div>
         </div>
       </section>
 
-      <section class="features">
+      <section class="features" id="features">
         <div class="container">
           <div class="features__items">
             <div class="features__item">
@@ -147,7 +159,11 @@
                   Leverage agile frameworks to provide a robust synopsis for
                   high level overviews.
                 </p>
-                <a href="#" class="features__link">Read More...</a>
+                <button class="features__link">Read More...</button>
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis voluptatum aliquid quis incidunt similique ad.
+                </p>
               </div>
               <div class="features__item-back">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -168,7 +184,11 @@
                   Leverage agile frameworks to provide a robust synopsis for
                   high level overviews.
                 </p>
-                <a href="#" class="features__link">Read More...</a>
+                <button class="features__link">Read More...</button>
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis voluptatum aliquid quis incidunt similique ad.
+                </p>
               </div>
               <div class="features__item-back">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
@@ -190,7 +210,11 @@
                   Leverage agile frameworks to provide a robust synopsis for
                   high level overviews.
                 </p>
-                <a href="#" class="features__link">Read More...</a>
+                <button class="features__link">Read More...</button>
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis voluptatum aliquid quis incidunt similique ad.
+                </p>
               </div>
 
               <div class="features__item-back">
@@ -205,9 +229,9 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
-          <h2 class="services__title">Why You Should Choose Us.</h2>
+          <h2 class="title services__title">Why You Should Choose Us.</h2>
           <p class="text services_subtitle">
             Distinctively exploit optimal alignments for intuitive bandwidth.
             Quickly coordinate e-business applications through revolutionary
@@ -222,8 +246,8 @@
               />
               <h3 class="services__item-title">Keyword Research</h3>
               <p class="services__item-text">
-                Business applications through revolutionary catalysts for chang
-                the Seamlessly underwhelm dures.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident magnam et earum quibusdam dicta eaque!
               </p>
               <button class="btn btn_services">Learn More</button>
             </div>
@@ -235,8 +259,9 @@
               />
               <h3 class="services__item-title">Seo Optimazadion</h3>
               <p class="services__item-text">
-                Business applications through revolutionary catalysts for chang
-                the Seamlessly underwhelm dures.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                quae deleniti consectetur magni fuga nihil! Tempora ut molestias
+                ex? Eos!
               </p>
               <button class="btn btn_services">Learn More</button>
             </div>
@@ -248,8 +273,10 @@
               />
               <h3 class="services__item-title">Social Marketing</h3>
               <p class="services__item-text">
-                Business applications through revolutionary catalysts for chang
-                the Seamlessly underwhelm dures.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                minus dolor quidem distinctio velit assumenda libero magnam,
+                delectus ducimus ullam obcaecati fugit quae cupiditate cum earum
+                harum in quo reiciendis!
               </p>
               <button class="btn btn_services">Learn More</button>
             </div>
@@ -266,7 +293,7 @@
           />
           <div class="advantages__wrapper">
             <div class="advantages__content">
-              <h2 class="advantages__title">
+              <h2 class="title advantages__title">
                 You may ask what<br />
                 SEO & why do you need it?
               </h2>
@@ -328,18 +355,12 @@
 
       <section class="info">
         <div class="container">
-          <div class="info__items">
-            <div class="info__item info__item1">
-              95<span>Happy Clients</span>
-            </div>
-            <div class="info__item info__item2">
-              115<span>Project Done</span>
-            </div>
-            <div class="info__item info__item3">
-              8+<span>Years Of Experince</span>
-            </div>
-            <div class="info__item info__item4">
-              12<span>National Awards</span>
+          <div class="info__wrapper">
+            <div class="info__items">
+              <div class="info__item">95<span>Happy Clients</span></div>
+              <div class="info__item">115<span>Project Done</span></div>
+              <div class="info__item">8+<span>Years Of Experince</span></div>
+              <div class="info__item">12<span>National Awards</span></div>
             </div>
           </div>
         </div>
@@ -376,7 +397,7 @@
       <section class="plans">
         <div class="container">
           <h2 class="title">Our Plans</h2>
-          <p class="text">Choose the right SEO for you</p>
+          <p class="text plans_text">Choose the right SEO for you</p>
           <div class="plans__items">
             <div class="plans__item">
               <div class="plans__item-title">Plus</div>
@@ -431,18 +452,27 @@
               />
               <h3 class="team__item-title">Nattasha</h3>
               <div class="team__item-subtitle">Web Develper</div>
-              <div class="socials team__socials">
-                <a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorfacebook team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectortwitter team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span
-                    class="icon-linkedinlinkedin team__item-icon"
-                  ></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorgoogle team__item-icon"></span
-                ></a>
+              <div class="socials team_socials">
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorfacebook team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectortwitter team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-linkedinlinkedin team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorgoogle team__item-icon"></span
+                  ></a>
+                </div>
               </div>
             </div>
             <div class="team__item">
@@ -454,18 +484,27 @@
 
               <h3 class="team__item-title">John Doe</h3>
               <div class="team__item-subtitle">Web Develper</div>
-              <div class="socials team__socials">
-                <a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorfacebook team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectortwitter team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span
-                    class="icon-linkedinlinkedin team__item-icon"
-                  ></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorgoogle team__item-icon"></span
-                ></a>
+              <div class="socials team_socials">
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorfacebook team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectortwitter team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-linkedinlinkedin team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorgoogle team__item-icon"></span
+                  ></a>
+                </div>
               </div>
             </div>
             <div class="team__item">
@@ -477,18 +516,27 @@
 
               <h3 class="team__item-title">Haris Milas</h3>
               <div class="team__item-subtitle">Ceo & Co-Funder</div>
-              <div class="socials team__socials">
-                <a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorfacebook team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectortwitter team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span
-                    class="icon-linkedinlinkedin team__item-icon"
-                  ></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorgoogle team__item-icon"></span
-                ></a>
+              <div class="socials team_socials">
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorfacebook team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectortwitter team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-linkedinlinkedin team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorgoogle team__item-icon"></span
+                  ></a>
+                </div>
               </div>
             </div>
             <div class="team__item">
@@ -500,18 +548,27 @@
 
               <h3 class="team__item-title">Nelson Mecoy</h3>
               <div class="team__item-subtitle">Marketing Manager</div>
-              <div class="socials team__socials">
-                <a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorfacebook team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectortwitter team__item-icon"></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span
-                    class="icon-linkedinlinkedin team__item-icon"
-                  ></span></a
-                ><a href="#" class="socials__link" id="team__socials-link"
-                  ><span class="icon-Vectorgoogle team__item-icon"></span
-                ></a>
+              <div class="socials team_socials">
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorfacebook team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectortwitter team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-linkedinlinkedin team__item-icon"></span
+                  ></a>
+                </div>
+                <div class="team__link-wrapper">
+                  <a href="#" class="socials__link" id="team__socials-link"
+                    ><span class="icon-Vectorgoogle team__item-icon"></span
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -605,9 +662,7 @@
         </div>
         <div class="news__slider">
           <div class="news__slider-slide">
-            <div class="news__wrapper-left">
-              <img class="news__img" src="img/news/img-1.png" alt="img-1" />
-            </div>
+            <img class="news__img" src="img/news/img-1.png" alt="img-1" />
 
             <div class="news__wrapper-right">
               <p class="news__title">
@@ -627,9 +682,7 @@
             </div>
           </div>
           <div class="news__slider-slide">
-            <div class="news__wrapper-left">
-              <img class="news__img" src="img/news/img-1.png" alt="img-2" />
-            </div>
+            <img class="news__img" src="img/news/img-1.png" alt="img-2" />
 
             <div class="news__wrapper-right">
               <p class="news__title">
@@ -649,9 +702,7 @@
             </div>
           </div>
           <div class="news__slider-slide">
-            <div class="news__wrapper-left">
-              <img class="news__img" src="img/news/img-1.png" alt="img-1" />
-            </div>
+            <img class="news__img" src="img/news/img-1.png" alt="img-1" />
 
             <div class="news__wrapper-right">
               <p class="news__title">
@@ -671,9 +722,7 @@
             </div>
           </div>
           <div class="news__slider-slide">
-            <div class="news__wrapper-left">
-              <img class="news__img" src="img/news/img-1.png" alt="img-2" />
-            </div>
+            <img class="news__img" src="img/news/img-1.png" alt="img-2" />
 
             <div class="news__wrapper-right">
               <p class="news__title">
@@ -765,6 +814,7 @@
         </div>
       </div>
     </footer>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <!-- <script src="js/swiper-bundle.min.js"></script> -->
     <script src="js/slick.min.js"></script>

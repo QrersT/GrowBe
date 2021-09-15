@@ -10,6 +10,12 @@ function dropDown() {
 
 dropDown();
 
+$(document).click(function (e) {
+  if ($(e.target).is(".menu__dropdown")) {
+    $(".menu__dropdown").addClass("hide");
+  }
+});
+
 /* const clientsSlider = new Swiper(".clients__slider", {
   slidesPerView: 2,
   spaceBetween: 30,
@@ -33,54 +39,156 @@ $(document).ready(function () {
       {
         breakpoint: 1750,
         settings: {
-          centerPadding: "100px",
+          centerPadding: "340px",
         },
+      },
+      {
         breakpoint: 1600,
         settings: {
-          centerPadding: "500px",
-          slidesToShow: 1,
+          centerPadding: "300px",
         },
+      },
+      {
         breakpoint: 1486,
         settings: {
-          centerPadding: "100px",
-          slidesToShow: 1,
+          centerPadding: "270px",
         },
-        breakpoint: 1200,
+      },
+      {
+        breakpoint: 1250,
+        settings: {
+          centerPadding: "200px",
+        },
+      },
+      {
+        breakpoint: 1100,
         settings: {
           centerPadding: "100px",
         },
-        breakpoint: 1200,
-        settings: {},
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          centerPadding: "180px",
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          centerPadding: "130px",
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          centerPadding: "10px",
+          slidesToShow: 1,
+        },
       },
     ],
   });
 
   $(".news__slider").slick({
     centerMode: true,
-    centerPadding: "550px",
+    centerPadding: "530px",
     slidesToShow: 1,
     arrows: false,
-    slidesToScroll: 6,
+    slidesToScroll: 2,
     // autoplay: true,
     // autoplaySpeed: 3000,
     dots: true,
     responsive: [
       {
-        breakpoint: 1700,
+        breakpoint: 1750,
         settings: {
-          centerPadding: "200px",
+          centerPadding: "490px",
         },
-        breakpoint: 1600,
+      },
+      {
+        breakpoint: 1610,
         settings: {
-          centerPadding: "350px",
-          centerMode: false,
-          slidesToShow: 2,
+          centerPadding: "430px",
         },
-        breakpoint: 1200,
+      },
+      {
+        breakpoint: 1500,
         settings: {
-          slidesToShow: 1,
+          centerPadding: "370px",
+        },
+      },
+      {
+        breakpoint: 1390,
+        settings: {
+          centerPadding: "320px",
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          centerPadding: "270px",
+        },
+      },
+      {
+        breakpoint: 1180,
+        settings: {
+          centerPadding: "240px",
+        },
+      },
+      {
+        breakpoint: 1095,
+        settings: {
+          centerPadding: "160px",
+        },
+      },
+      {
+        breakpoint: 950,
+        settings: {
+          centerPadding: "80px",
+        },
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          centerPadding: "0px",
         },
       },
     ],
   });
 });
+
+function hamburgerMenu() {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".header__right");
+
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("hamburger_active");
+    menu.classList.toggle("header__right_active");
+  });
+}
+
+hamburgerMenu();
+
+$(document).mouseup(function (e) {
+  var div = $(".header__right, .hamburger");
+  if (!div.is(e.target) && div.has(e.target).length === 0) {
+    div.removeClass("header__right_active");
+    $(".hamburger").removeClass("hamburger_active");
+  }
+});
+
+// Accordion
+var acc = document.getElementsByClassName("features__link");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
